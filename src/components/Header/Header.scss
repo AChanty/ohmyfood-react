@@ -1,0 +1,64 @@
+@import '../../../sass/libs/_responsive';
+@import '../../../sass/libs/_variables';
+
+.header {
+// background-color: #131516;
+   text-align: center;
+
+   &__logo {
+    filter: invert(100%);
+   }
+   &__logo-wrapper {
+      padding: 25px 0 10px 0;
+      box-shadow: 1px 3px 10px rgba(50, 50, 50, 0.35);
+
+      @include large-screen {
+         padding: 50px 0 20px 0;
+      }
+   }
+}
+
+.header__restaurant-wrapper {
+   display: flex;
+   justify-content: center;
+   position: relative;
+
+   i {
+      position: absolute;
+      left: 2%;
+        top: -15%;
+    //   top: 1900%;
+      font-size: 1.2em;
+    //   background: linear-gradient(
+    //      to top,
+    //      $color-primary 0%,
+    //      $color-secondary 100%
+    //   );
+    background: linear-gradient(
+        to left top,
+        rgb(82, 30, 144) 0%,
+        rgb(131, 0, 95) 100%
+    );
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: white;
+      transition: 0.3s;
+
+      &:hover {
+         opacity: 0.8;
+         box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+         transform: rotate(360deg) scale(1.2);
+      }
+
+      @include medium-screen {
+        top: 1900%;
+     }
+   }
+}
+
+.fa-arrow-left:before {
+   position: absolute;
+   top: calc(50% - 10px);
+   left: 29%;
+}

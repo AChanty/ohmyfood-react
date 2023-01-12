@@ -1,0 +1,44 @@
+@import '../../../sass/libs/_responsive';
+@import '../../../sass/libs/_variables';
+
+.restaurants-wrapper {
+//    background: $background-variation;
+background-color: #1D2021;
+   padding: 50px 0;
+
+   .restaurants {
+      width: 90%;
+      margin: auto;
+
+      h2 {
+         font-size: 1.5em;
+         margin-bottom: 25px;
+         color: white;
+
+         @include large-screen {
+            margin-bottom: 50px;
+            font-size: 2em;
+         }
+
+         @include medium-screen {
+            text-align: center;
+         }
+      }
+
+      &__item-wrapper {
+         max-width: 500px;
+         margin: auto;
+
+         @include medium-screen {
+            max-width: 75%;
+         }
+
+         @include large-screen {
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+      }
+   }
+}

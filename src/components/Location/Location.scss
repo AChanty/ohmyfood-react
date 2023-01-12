@@ -1,0 +1,29 @@
+@import '../../../sass/libs/_responsive';
+
+.location {
+   margin-top: 5px;
+   text-align: center;
+   background-color: #242728;
+
+   
+   &__area {
+      // background: #eaeaea;
+   background-color: #242728;
+
+      padding: 13px 0;
+      font-weight: bold;
+      // color: #565656;
+      color: white;
+
+   
+      @include large-screen {
+         padding: 26px 0;
+       }
+   
+       i {
+         margin-right: 10px;
+       }
+   }
+}
+
+

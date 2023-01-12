@@ -1,0 +1,126 @@
+@import '../../../sass/libs/_responsive';
+@import '../../../sass/libs/_variables';
+@import '../../../sass/utils/_animations';
+
+.cards {
+   //    max-width: 500px;
+   margin: auto;
+
+   @include medium-screen {
+      //   max-width: 75%;
+   }
+
+   @include large-screen {
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   &__item {
+      margin-bottom: 20px;
+      transition: 0.3s;
+      position: relative;
+
+      @include medium-screen {
+         margin-bottom: 40px;
+      }
+
+      @include large-screen {
+         width: 48%;
+      }
+
+      &:hover {
+         @include large-screen {
+            // transform: scale(1.03);
+            img {
+               transform: scale(1.2);
+               transition: 2s ease;
+            }
+         }
+      }
+      .cards__item-img_holder {
+         width: 100%;
+         height: 175px;
+
+         // pour animation/transition :
+         overflow: hidden;
+         border-radius: 15px 15px 0 0;
+         transition: 2s ease;
+      }
+      img {
+         border-radius: 15px 15px 0 0;
+         width: 100%;
+         height: 175px;
+         object-fit: cover;
+         position: relative;
+         transition: 2s ease;
+      }
+
+      //   span {
+      //      background-color: $color-tertiary;
+      //      color: #289077;
+      //      font-weight: bold;
+      //      font-size: 0.9em;
+      //      padding: 6px 12px;
+      //      position: absolute;
+      //      transform: translate(-120%, 50%);
+      //   }
+
+      &__flex {
+         background: white;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 15px;
+         border-radius: 0 0 15px 15px;
+         box-shadow: 4px 8px 20px rgba(50, 50, 50, 0.1);
+         margin-top: -4px;
+         background-color: #181a1b;
+
+         p {
+            color: $color-quatenary;
+         }
+
+         i {
+            transform: scale(1.4, 1.7);
+            color: $color-quatenary;
+         }
+
+         h3 {
+            color: white;
+         }
+
+         @include medium-screen {
+            h3 {
+               font-size: 1.1em;
+            }
+         }
+         @include large-screen {
+            h3 {
+               font-size: 1.2em;
+            }
+         }
+      }
+   }
+}
+
+.cards_new {
+   // background-color: $color-tertiary;
+   background-color: rgb(29, 101, 88);
+   // color: #289077;
+   color: white;
+   font-weight: bold;
+   font-size: 0.9em;
+   padding: 6px 12px;
+   position: absolute;
+   top: 6%;
+   right: 3%;
+   border-radius: 15px;
+   user-select: none;
+}
+
+.fa-heart {
+   // heart animation
+   @include heartgrow;
+}

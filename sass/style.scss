@@ -1,0 +1,62 @@
+@import 'libs/__reset.scss';
+@import 'libs/__variables.scss';
+@import 'utils/__fonts.scss';
+@import 'libs/__mixins.scss';
+@import 'libs/__responsive.scss';
+@import 'components/__button.scss';
+@import 'utils/__animations.scss';
+
+body {
+   font-family: $texts;
+   background-color: #181a1b;
+   user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: $titles;
+   color: black;
+}
+
+.regular-title {
+   font-family: $texts;
+   font-weight: bold;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+a:visited {
+   color: inherit;
+}
+
+// scrollbar chrome
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #181A1B;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.44, #5c5c5c),
+    color-stop(0.72, #595959),
+    color-stop(0.86, #525252)
+  );
+}
+// scrollbar firefox
+:root{
+  scrollbar-color: #525252 #181A1B;
+  scrollbar-width: thin;
+}

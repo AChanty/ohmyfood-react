@@ -1,0 +1,49 @@
+@import '../../../sass/libs/_responsive';
+@import '../../../sass/libs/_variables';
+@import '../../../sass/components/_button';
+
+.banner {
+//    background: $background-variation;
+background-color: #1D2021;
+   text-align: center;
+
+   &__cta {
+      padding: 40px 0 70px 0;
+      width: 90%;
+      margin: auto;
+
+      @include large-screen {
+         padding: 80px 0 100px 0;
+      }
+
+      h1 {
+         font-size: 1.5em;
+         line-height: 1.2em;
+         width: 80%;
+         margin: auto;
+      color: white;
+
+
+         @include large-screen {
+            font-size: 2em;
+         }
+      }
+
+      p {
+         color: $color-quatenary;
+         margin: 10px 0 45px 0;
+         font-size: 1.05em;
+         
+      }
+
+      &__button {
+         white-space: nowrap;
+         @include button;
+         background: linear-gradient(
+            to left top,
+            rgb(82, 30, 144) 0%,
+            rgb(131, 0, 95) 100%
+        );
+      }
+   }
+}

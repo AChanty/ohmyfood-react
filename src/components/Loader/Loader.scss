@@ -1,0 +1,23 @@
+@import '../../../sass/libs/_variables';
+
+.loader {
+    display: block;
+    width: 196px;
+    height: 34px;
+    background-image: url(../../assets/logos/ohmyfood@2x-spinner.svg);
+    animation: loader 1.5s ease;
+  }
+  .loader-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: $background-variation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader-opacity 250ms 2s forwards;
+    opacity: 1;
+    z-index: 1;
+  }

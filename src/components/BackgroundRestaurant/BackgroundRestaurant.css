@@ -1,0 +1,18 @@
+.restaurant__background {
+   height: 280px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+@media screen and (min-width: 768px) {
+   .restaurant__background {
+      height: 350px;
+   }
+}
+@media screen and (min-width: 1366px) {
+   .restaurant__background {
+      height: 400px;
+      background-position: bottom;
+      background-attachment: fixed;
+   }
+} /*# sourceMappingURL=BackgroundRestaurant.css.map */

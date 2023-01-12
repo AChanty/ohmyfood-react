@@ -1,0 +1,5 @@
+@import '../../../sass/libs/_mixins';
+
+.restaurant__background {
+    @include background-restaurant;
+  }

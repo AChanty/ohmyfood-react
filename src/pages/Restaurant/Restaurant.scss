@@ -1,0 +1,253 @@
+@import '../../../sass/libs/_responsive';
+@import '../../../sass/libs/__mixins';
+@import '../../../sass/libs/__reset';
+@import '../../../sass/libs/__variables';
+@import "../../../sass/utils/__fonts.scss";
+@import "../../../sass/utils/__animations.scss";
+@import "../../../sass/components/__button.scss";
+
+.restaurant-page-wrapper {
+    // background: $background-variation;
+    background-color: #1D2021;
+    border-radius: 40px 40px 0 0;
+    margin-top: -65px;
+    padding: 30px 0;
+  
+    @include large-screen {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .restaurant-page {
+      width: 90%;
+      margin: auto;
+  
+      &__menus-wrapper {
+        @include large-screen {
+          width: 30%;
+        }
+      }
+  
+      @include large-screen {
+        &__flex {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+  
+      &__label {
+        text-transform: uppercase;
+        line-height: 1.5em;
+      }
+  
+      &__restaurant-name {
+        margin-bottom: 30px;
+        position: relative;
+  
+        h1 {
+          font-size: 1.7em;
+          width: 80%;
+          color: white;
+  
+          @include medium-screen {
+            width: 100%;
+          }
+          @include large-screen {
+            font-size: 2em;
+            width: 100%;
+          }
+        }
+        i {
+          margin: auto;
+          color: $color-quatenary;
+          transform: scale(1.4, 1.7);
+          position: absolute;
+          right: 20px;
+          top: 27%;
+        }
+      }
+  
+      &__label-wrapper {
+        margin-bottom: 20px;
+  
+        span::before {
+          content: " ";
+          height: 3px;
+          width: 40px;
+        //   background-color: $color-tertiary;
+          background-color: rgb(29, 101, 88);
+          position: absolute;
+        }
+        @include medium-screen {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @include large-screen {
+          width: 100%;
+        }
+      }
+  
+      &__label {
+        margin-bottom: 3px;
+        color: white;
+      }
+  
+      &__plates-wrapper {
+        margin-bottom: 30px;
+      }
+  
+      &__plate {
+        // background: white;
+        background-color: rgb(24, 26, 27);
+        border-radius: 15px;
+        display: flex;
+        overflow: hidden; // cacher checkbox hors du conteneur
+        width: 100%;
+        box-shadow: 1px 6px 6px rgba(50, 50, 50, 0.1);
+        margin-bottom: 15px;
+        transition: 0.5s;
+        color: white;
+  
+        @include medium-screen {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @include large-screen {
+          margin-bottom: 30px;
+          width: 100%;
+        }
+      }
+  
+      &__plate-description {
+        width: 100%;
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 9px;
+        overflow: hidden;
+      }
+  
+      &__plate-description-text {
+        width: 100%;
+        margin-left: 10px;
+        overflow: hidden; // permet au prix de rester visible en minifiant la description + "..."
+  
+        @include medium-screen {
+          margin-left: 20px;
+        }
+  
+        &__plate-name {
+          margin: 8px 0 0 0;
+          font-weight: bold;
+          font-size: 1.1em;
+          line-height: 1.5em;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+  
+          @include medium-screen {
+            margin: 16px 0 0 0;
+          }
+        }
+  
+        &__plate-infos {
+          margin-bottom: 3px;
+          color: $color-quatenary;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          font-size: 0.9em;
+  
+          @include medium-screen {
+            margin-bottom: 9px;
+          }
+        }
+      }
+  
+      &__plate-price-wrapper {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 3px;
+        margin-right: 9px;
+        font-size: 0.9em;
+  
+        @include medium-screen {
+          margin-bottom: 9px;
+        }
+      }
+  
+      &__plate-price {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+  
+      &__check-wrapper {
+        width: 30%;
+        // background: $color-tertiary;
+        background-color: rgb(29, 101, 88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: -30%; // cacher checkbox
+        transition: 0.5s ease;
+  
+        i {
+        //   color: $color-tertiary;
+        color: rgb(29, 101, 88);
+          padding: 5px;
+          border-radius: 50%;
+          background: white;
+          transition-duration: 0.5s;
+        }
+      }
+  
+      &__plate:hover  {
+        cursor: pointer;
+  
+        .restaurant-page__check-wrapper {
+        margin-right: 0; // faire réapparaître checkbox en annulant -30% margin right
+        transition: 0.5s ease;
+        }
+  
+        .fa-check {
+        transform: rotate(360deg);
+        transition: 0.5s;
+        }
+      }
+  
+      &__button-wrapper {
+        text-align: center;
+        margin: 60px 0 50px 0;
+  
+        @include large-screen {
+          margin-top: 30px;
+        }
+        &__button {
+          @include button;
+        //   background: linear-gradient(
+        //     to top,
+        //     $color-primary 0%,
+        //     $color-secondary 100%
+        //   );
+        background: linear-gradient(
+            to left top,
+            rgb(82, 30, 144) 0%,
+            rgb(131, 0, 95) 100%
+        );
+        }
+      }
+    }
+  }
+
+  @for $i from 1 through 4 {
+    // menu animation
+    .restaurant-page__plate:nth-child(#{$i}) {
+      animation-name: fadein;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      animation-delay: $i * 0.2s;
+    }
+  }
+  

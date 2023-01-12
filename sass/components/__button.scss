@@ -1,0 +1,25 @@
+@mixin button {
+    text-decoration: none;
+    color: white;
+    width: 70%;
+    max-width: 215px;
+    margin: auto;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background: linear-gradient(
+        to left top,
+        $color-primary 0%,
+        $color-secondary 100%
+    );
+    box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+    transition: 0.3s;
+  
+     a {
+        font-size: 1em;
+    }
+  
+    &:hover {
+        opacity: 0.8;
+        box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+    }
+}

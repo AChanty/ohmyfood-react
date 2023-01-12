@@ -1,0 +1,17 @@
+$breakpoints: (
+    dekstop: 1366px,
+    tablet: 768px
+);
+
+
+@mixin large-screen {
+    @media screen and (min-width: map-get($breakpoints, dekstop)){
+        @content;
+    }
+    }
+
+@mixin medium-screen {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+    }

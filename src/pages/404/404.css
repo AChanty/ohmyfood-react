@@ -1,0 +1,56 @@
+.error_container {
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.error_message-container {
+   text-align: center;
+}
+
+.error_title {
+   font-size: 96px;
+   font-weight: 700;
+   font-family: 'roboto';
+}
+
+.error_text-container {
+   margin: 0 57px;
+}
+
+.error_text {
+   font-size: 18px;
+   line-height: 1.4em;
+}
+
+.error_back {
+   font-size: 14px;
+   text-decoration: underline;
+}
+
+.error_title,
+.error_text,
+.error_back-link:visited {
+   color: white;
+}
+
+@media screen and (min-width: 992px) {
+   .error_container {
+      justify-content: space-around;
+      transition: 0.3s;
+   }
+
+   .error_title {
+      font-size: 150px;
+   }
+
+   .error_text {
+      font-size: 28px;
+   }
+
+   .error_back {
+      font-size: 18px;
+   }
+}

@@ -49,6 +49,10 @@ function Restaurant() {
 
    const { pathname } = useLocation()
 
+   if (!Restaurant) {
+      return <Navigate to="/404" />
+   }
+
    // redirige vers la page d'erreur 404 si l'id de l'url ne correspond à aucun id existant
    if (!Restaurant) {
       return <Navigate to="/" />

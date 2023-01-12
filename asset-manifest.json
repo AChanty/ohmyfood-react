@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ohmyfood-react/static/css/main.27efe537.css",
-    "main.js": "/ohmyfood-react/static/js/main.ab114538.js",
+    "main.css": "/ohmyfood-react/static/css/main.be5bbf11.css",
+    "main.js": "/ohmyfood-react/static/js/main.a0182cf0.js",
     "static/media/ohmyfood@2x.svg": "/ohmyfood-react/static/media/ohmyfood@2x.b2b903cdc74de60722a87c015e81a5af.svg",
     "index.html": "/ohmyfood-react/index.html",
     "static/media/heart-solid.svg": "/ohmyfood-react/static/media/heart-solid.236926d89b6bc9d74a8a.svg",
-    "main.27efe537.css.map": "/ohmyfood-react/static/css/main.27efe537.css.map",
-    "main.ab114538.js.map": "/ohmyfood-react/static/js/main.ab114538.js.map"
+    "main.be5bbf11.css.map": "/ohmyfood-react/static/css/main.be5bbf11.css.map",
+    "main.a0182cf0.js.map": "/ohmyfood-react/static/js/main.a0182cf0.js.map"
   },
   "entrypoints": [
-    "static/css/main.27efe537.css",
-    "static/js/main.ab114538.js"
+    "static/css/main.be5bbf11.css",
+    "static/js/main.a0182cf0.js"
   ]
 }

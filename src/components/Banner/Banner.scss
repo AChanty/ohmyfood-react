@@ -3,8 +3,8 @@
 @import '../../../sass/components/_button';
 
 .banner {
-//    background: $background-variation;
-background-color: #1D2021;
+   //    background: $background-variation;
+   background-color: #1d2021;
    text-align: center;
 
    &__cta {
@@ -21,8 +21,7 @@ background-color: #1D2021;
          line-height: 1.2em;
          width: 80%;
          margin: auto;
-      color: white;
-
+         color: white;
 
          @include large-screen {
             font-size: 2em;
@@ -33,7 +32,10 @@ background-color: #1D2021;
          color: $color-quatenary;
          margin: 10px 0 45px 0;
          font-size: 1.05em;
-         
+      }
+
+      a {
+         color: white;
       }
 
       &__button {
@@ -43,7 +45,7 @@ background-color: #1D2021;
             to left top,
             rgb(82, 30, 144) 0%,
             rgb(131, 0, 95) 100%
-        );
+         );
       }
    }
 }

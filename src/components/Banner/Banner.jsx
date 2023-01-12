@@ -12,21 +12,9 @@ function Banner() {
                Découvrez des restaurants d'exception, séléctionnés par nos
                soins.
             </p>
-            <a
-               className="banner__cta__button"
-               href="#restaurants"
-               style={{ color: 'white' }}
-            >
+            <a className="banner__cta__button" href="#restaurants">
                Explorer nos restaurants
             </a>
-            {/* <Link
-               to="#restaurant"
-               className="banner__cta__button"
-               href="#restaurants"
-               style={{ color: 'white' }}
-            >
-               Explorer nos restaurants
-            </Link> */}
          </div>
       </div>
    )

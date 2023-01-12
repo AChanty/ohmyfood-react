@@ -16,8 +16,9 @@ root.render(
          <ScrollToTop />
          <Header />
          <Routes>
-            <Route path="*" element={<Home />}></Route>
+            {/* <Route path="*" element={<Home />}></Route> */}
             <Route index element={<Home />}></Route>
+            <Route path="/ohmyfood-react" element={<Home />}></Route>
             <Route path="/restaurant/:id" element={<Restaurant />}></Route>
          </Routes>
          <Footer />

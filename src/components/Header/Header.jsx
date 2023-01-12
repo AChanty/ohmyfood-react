@@ -4,12 +4,13 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 function Header() {
    const { pathname } = useLocation()
+   const isRestaurantPage = pathname.startsWith('/restaurant')
 
    return (
       <header className="header">
          <div className="header__logo-wrapper">
             <div className="header__restaurant-wrapper">
-               {pathname.startsWith('/restaurant') && ( // affiche la flèche de retour si l'url commence par /restaurant
+               {isRestaurantPage && ( // affiche la flèche de retour si l'url commence par /restaurant
                   <NavLink to="/">
                      <i className="fa-solid fa-arrow-left"></i>
                   </NavLink>

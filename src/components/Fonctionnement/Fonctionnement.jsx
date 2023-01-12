@@ -1,21 +1,36 @@
 import './Fonctionnement.css'
 
+const steps = [
+   {
+      icon: 'fa-mobile-screen-button',
+      text: 'Choisissez un restaurant',
+   },
+   {
+      icon: 'fa-list',
+      text: 'Composez votre menu',
+   },
+   {
+      icon: 'fa-store',
+      text: 'Dégustez au restaurant',
+   },
+]
+
 function Fonctionnement() {
    return (
       <div className="fonctionnement-wrapper">
          <section className="fonctionnement">
             <h2 className="regular-title">Fonctionnement</h2>
             <div className="fonctionnement__steps">
-               <div className="fonctionnement__steps__item">
-                  <i className="fa-solid fa-mobile-screen-button"></i>Choisissez
-                  un restaurant
-               </div>
-               <div className="fonctionnement__steps__item">
-                  <i className="fa-solid fa-list"></i>Composez votre menu
-               </div>
-               <div className="fonctionnement__steps__item">
-                  <i className="fa-solid fa-store"></i>Dégustez au restaurant
-               </div>
+               {/* parcourt le tableau "steps" pour créer un élément pour chaque entrée présente */}
+               {steps.map((step, index) => (
+                  <div key={index} className="fonctionnement__steps__item">
+                     <i className={`fa-solid ${step.icon}`}></i>
+                     {step.text}
+                     <div className="fonctionnement__steps__item-counter">
+                        {index + 1}
+                     </div>
+                  </div>
+               ))}
             </div>
          </section>
       </div>

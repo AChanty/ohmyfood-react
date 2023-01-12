@@ -98,33 +98,52 @@
           }
         }
   
-        &:nth-child(1):before {
-          content: "1";
-          @include steps-number;
-          background: linear-gradient(
-            to left top,
-            rgb(82, 30, 144) 0%,
-            rgb(131, 0, 95) 100%
-        );
-        }
-        &:nth-child(2):before {
-          content: "2";
-          @include steps-number;
-          background: linear-gradient(
-            to left top,
-            rgb(82, 30, 144) 0%,
-            rgb(131, 0, 95) 100%
-        );
-        }
-        &:nth-child(3):before {
-          content: "3";
-          @include steps-number;
-          background: linear-gradient(
-            to left top,
-            rgb(82, 30, 144) 0%,
-            rgb(131, 0, 95) 100%
-        );
-        }
+        // &:nth-child(1):before {
+        //   content: "1";
+        //   @include steps-number;
+        //   background: linear-gradient(
+        //     to left top,
+        //     rgb(82, 30, 144) 0%,
+        //     rgb(131, 0, 95) 100%
+        // );
+        // }
+        // &:nth-child(2):before {
+        //   content: "2";
+        //   @include steps-number;
+        //   background: linear-gradient(
+        //     to left top,
+        //     rgb(82, 30, 144) 0%,
+        //     rgb(131, 0, 95) 100%
+        // );
+        // }
+        // &:nth-child(3):before {
+        //   content: "3";
+        //   @include steps-number;
+        //   background: linear-gradient(
+        //     to left top,
+        //     rgb(82, 30, 144) 0%,
+        //     rgb(131, 0, 95) 100%
+        // );
+        // }
       }
     }
+  }
+
+  .fonctionnement__steps__item-counter {
+    // @include steps-number;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    color: white;
+    position: absolute;
+    left: -10px;
+    background: linear-gradient(
+            to left top,
+            rgb(82, 30, 144) 0%,
+            rgb(131, 0, 95) 100%
+        );
   }

@@ -127,10 +127,6 @@
 .cards__item__flex p {
    color: #7d7d7d;
 }
-.cards__item__flex i {
-   transform: scale(1.4, 1.7);
-   color: #7d7d7d;
-}
 .cards__item__flex h3 {
    color: #fff;
 }
@@ -171,4 +167,16 @@
 }
 .fa-heart:hover::before {
    opacity: 0;
+}
+.cards__item__icon i {
+   transform: scale(1.4, 1.7);
+   color: #7d7d7d;
+   position: absolute;
+   bottom: 11%;
+   right: 15px;
+}
+.selected-heart {
+   width: 16px;
+   cursor: pointer;
+   content: url(../../assets/heart-solid.svg);
 } /*# sourceMappingURL=Card.css.map */

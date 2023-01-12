@@ -82,10 +82,10 @@
             color: $color-quatenary;
          }
 
-         i {
-            transform: scale(1.4, 1.7);
-            color: $color-quatenary;
-         }
+        //  i {
+        //     transform: scale(1.4, 1.7);
+        //     color: $color-quatenary;
+        //  }
 
          h3 {
             color: white;
@@ -123,4 +123,17 @@
 .fa-heart {
    // heart animation
    @include heartgrow;
+}
+
+.cards__item__icon i {
+    transform: scale(1.4, 1.7);
+    color: $color-quatenary;
+    position: absolute;
+    bottom: 11%;
+    right: 15px;
+ }
+ .selected-heart {
+    width: 16px;
+    cursor: pointer;
+    content: url(../../assets/heart-solid.svg);
 }

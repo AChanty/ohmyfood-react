@@ -4,41 +4,9 @@ import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Location from '../../components/Location/Location'
 import { Link } from 'react-router-dom'
 import BackgroundRestaurant from '../../components/BackgroundRestaurant/BackgroundRestaurant'
-// import PlatesList from '../../components/PlatesList/PlatesList'
+import PlatesList from '../../components/PlatesList/PlatesList'
 
 import { Helmet } from 'react-helmet'
-
-function PlatesList({ categorie }) {
-   return (
-      <div>
-         {categorie.map((categorie, index) => {
-            // créé un template pour chaque élément de 'categorie'
-            return (
-               <div className="restaurant-page__plate" key={index}>
-                  <div className="restaurant-page__plate-description">
-                     <div className="restaurant-page__plate-description-text">
-                        <p className="restaurant-page__plate-description-text__plate-name">
-                           {categorie.plate}
-                        </p>
-                        <p className="restaurant-page__plate-description-text__plate-infos">
-                           {categorie.description}
-                        </p>
-                     </div>
-                     <div className="restaurant-page__plate-price-wrapper">
-                        <p className="restaurant-page__plate-price">
-                           {categorie.price}
-                        </p>
-                     </div>
-                  </div>
-                  <div className="restaurant-page__check-wrapper">
-                     <i className="fas fa-check"></i>
-                  </div>
-               </div>
-            )
-         })}
-      </div>
-   )
-}
 
 function Restaurant() {
    const { id } = useParams() // utilise l'id de l'url
@@ -72,7 +40,7 @@ function Restaurant() {
             <section className="restaurant-page">
                <div className="restaurant-page__restaurant-name">
                   <h1>{name}</h1>
-                  <i className="fa-regular fa-heart"></i>
+                  <i className="fa-regular fa-heart" />
                </div>
                <div className="restaurant-page__flex">
                   <div className="restaurant-page__menus-wrapper">

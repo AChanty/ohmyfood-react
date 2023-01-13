@@ -3,7 +3,7 @@ import './PlatesList.css'
 function PlatesList({ categorie }) {
    return (
       <div>
-         {Object.entries({ categorie }).map(({ categorie }, index) => {
+         {categorie.map((categorie, index) => {
             return (
                <div className="restaurant-page__plate" key={index}>
                   <div className="restaurant-page__plate-description">
@@ -22,7 +22,7 @@ function PlatesList({ categorie }) {
                      </div>
                   </div>
                   <div className="restaurant-page__check-wrapper">
-                     <i className="fas fa-check"></i>
+                     <i className="fas fa-check" />
                   </div>
                </div>
             )

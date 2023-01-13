@@ -24,9 +24,10 @@ function Fonctionnement() {
                {/* parcourt le tableau "steps" pour créer un élément pour chaque entrée présente */}
                {steps.map((step, index) => (
                   <div key={index} className="fonctionnement__steps__item">
-                     <i className={`fa-solid ${step.icon}`}></i>
+                     <i className={`fa-solid ${step.icon}`} />
                      {step.text}
                      <div className="fonctionnement__steps__item-counter">
+                        {/* affiche le nombre correspondant à l'index pour avoir une numérotation des éléments*/}
                         {index + 1}
                      </div>
                   </div>

@@ -34,7 +34,7 @@ function Footer() {
                   <li key={index}>
                      <NavLink to={link.path}>
                         {link.icon && ( // injecte ce code si l'objet du tableau contient une valeur "icon"
-                           <i className={`fa-solid ${link.icon}`}></i>
+                           <i className={`fa-solid ${link.icon}`} />
                         )}
                         {link.text}
                      </NavLink>

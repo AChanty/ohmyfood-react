@@ -14,7 +14,7 @@ function Card() {
          {Restaurants.map(
             // créé un div.card-item pour chaque objet disponible dans restaurants.json
             (restaurant, index) => (
-               <div className="cards__item" key={restaurant.id}>
+               <div className="cards__item" key={index}>
                   <Link
                      to={`restaurant/${restaurant.id}`} // le lien dirige vers restaurants/:restaurants.id
                   >
@@ -29,7 +29,7 @@ function Card() {
                      </div>
                   </Link>
                   <div className="cards__item__icon">
-                     <i className="fa-regular fa-heart"></i>
+                     <i className="fa-regular fa-heart" />
                   </div>
                   <IsNew restaurant={restaurant} />
                </div>

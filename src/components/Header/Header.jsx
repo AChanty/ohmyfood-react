@@ -12,7 +12,7 @@ function Header() {
             <div className="header__restaurant-wrapper">
                {isRestaurantPage && ( // affiche la flèche de retour si l'url commence par /restaurant
                   <NavLink to="/">
-                     <i className="fa-solid fa-arrow-left"></i>
+                     <i className="fa-solid fa-arrow-left" />
                   </NavLink>
                )}
                <NavLink to="/">

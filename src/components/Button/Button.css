@@ -1,0 +1,25 @@
+.general-button {
+   text-decoration: none;
+   color: white;
+   width: 70%;
+   max-width: 215px;
+   margin: auto;
+   padding: 15px 20px;
+   border-radius: 50px;
+   background: linear-gradient(
+      to left top,
+      rgb(82, 30, 144) 0%,
+      rgb(131, 0, 95) 100%
+   );
+   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.35);
+   transition: 0.3s;
+}
+
+.general-button:hover {
+   opacity: 0.8;
+   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+}
+
+.general-button:visited {
+   color: white;
+}

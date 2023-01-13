@@ -1,5 +1,6 @@
 import './Banner.css'
 // import { Link } from 'react-router-dom'
+import Button from '../../components/Button/Button'
 
 function Banner() {
    return (
@@ -12,9 +13,7 @@ function Banner() {
                Découvrez des restaurants d'exception, séléctionnés par nos
                soins.
             </p>
-            <a className="banner__cta__button" href="#restaurants">
-               Explorer nos restaurants
-            </a>
+            <Button text={'Explorer nos restaurants'} anchor={'restaurants'} />
          </div>
       </div>
    )

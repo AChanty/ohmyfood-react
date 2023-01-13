@@ -2,9 +2,9 @@ import './Restaurant.css'
 import Restaurants from './../../assets/datas/restaurants.json'
 import { Navigate, useLocation, useParams } from 'react-router-dom'
 import Location from '../../components/Location/Location'
-import { Link } from 'react-router-dom'
 import BackgroundRestaurant from '../../components/BackgroundRestaurant/BackgroundRestaurant'
 import PlatesList from '../../components/PlatesList/PlatesList'
+import Button from '../../components/Button/Button'
 
 import { Helmet } from 'react-helmet'
 
@@ -75,12 +75,7 @@ function Restaurant() {
                   </div>
                </div>
                <div className="restaurant-page__button-wrapper">
-                  <Link
-                     to={pathname}
-                     className="restaurant-page__button-wrapper__button"
-                  >
-                     Commander
-                  </Link>
+                  <Button text={'Commander'} link={pathname} />
                </div>
             </section>
          </div>

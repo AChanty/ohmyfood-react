@@ -5,7 +5,9 @@ import Location from '../../components/Location/Location'
 import BackgroundRestaurant from '../../components/BackgroundRestaurant/BackgroundRestaurant'
 import PlatesList from '../../components/PlatesList/PlatesList'
 import Button from '../../components/Button/Button'
+import Popup from '../../components/Popup/Popup'
 import { Helmet } from 'react-helmet'
+import { useState } from 'react'
 
 function Restaurant() {
    const { id } = useParams() // utilise l'id de l'url
@@ -15,6 +17,8 @@ function Restaurant() {
    })
 
    const { pathname } = useLocation()
+
+   const [showPopup, setShowPopup] = useState(true)
 
    // redirige vers la page d'erreur 404 si l'id de l'url ne correspond à aucun id existant
    if (!Restaurant) {
@@ -70,7 +74,15 @@ function Restaurant() {
                   </div>
                </div>
                <div className="restaurant-page__button-wrapper">
-                  <Button text={'Commander'} link={pathname} />
+                  <Button
+                     text={'Commander'}
+                     link={pathname}
+                     onClick={() => setShowPopup(false)}
+                  />
+                  {showPopup ? (
+                     <Popup showPopup={showPopup} setShowPopup={setShowPopup} />
+                  ) : null}
+                  {console.log(showPopup)}
                </div>
             </section>
          </div>

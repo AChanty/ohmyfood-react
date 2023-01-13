@@ -1,0 +1,21 @@
+.popup_container {
+   width: 500px;
+   height: 500px;
+   background-color: #181a1b;
+   position: absolute;
+   top: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.popup_close-button {
+   position: absolute;
+   top: 5%;
+   right: 5%;
+   cursor: pointer;
+}
+
+.popup_content {
+   width: 100%;
+}

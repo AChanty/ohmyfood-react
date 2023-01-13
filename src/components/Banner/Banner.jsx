@@ -1,5 +1,4 @@
 import './Banner.css'
-// import { Link } from 'react-router-dom'
 import Button from '../../components/Button/Button'
 
 function Banner() {

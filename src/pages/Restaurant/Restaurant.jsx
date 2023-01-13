@@ -5,7 +5,6 @@ import Location from '../../components/Location/Location'
 import BackgroundRestaurant from '../../components/BackgroundRestaurant/BackgroundRestaurant'
 import PlatesList from '../../components/PlatesList/PlatesList'
 import Button from '../../components/Button/Button'
-
 import { Helmet } from 'react-helmet'
 
 function Restaurant() {
@@ -17,13 +16,9 @@ function Restaurant() {
 
    const { pathname } = useLocation()
 
-   if (!Restaurant) {
-      return <Navigate to="/404" />
-   }
-
    // redirige vers la page d'erreur 404 si l'id de l'url ne correspond à aucun id existant
    if (!Restaurant) {
-      return <Navigate to="/" />
+      return <Navigate to="/404" />
    }
 
    const { name, location, menu, background } = Restaurant

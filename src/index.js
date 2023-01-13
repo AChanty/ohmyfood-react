@@ -9,8 +9,6 @@ import Restaurant from './pages/Restaurant/Restaurant.jsx'
 import ScrollToTop from './assets/utils/ScrollToTop'
 import NotFound from './pages/404/404.jsx'
 
-// import Location from './components/Location/Location'
-
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <React.StrictMode>

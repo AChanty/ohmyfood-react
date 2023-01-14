@@ -16,7 +16,7 @@ root.render(
          <ScrollToTop />
          <Header />
          <Routes>
-            <Route path="*" element={<Navigate to="/404" />}></Route>
+            {/* <Route path="*" element={<Navigate to="/404" />}></Route> */}
             <Route index element={<Home />}></Route>
             <Route path="/restaurant/:id" element={<Restaurant />}></Route>
             <Route path="/404" element={<NotFound />}></Route>

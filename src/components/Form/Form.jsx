@@ -1,17 +1,40 @@
 import './Form.css'
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { Navigate, useLocation, useParams } from 'react-router-dom'
+import { useState } from 'react'
+import ResponsiveRules from '../../../src/assets/utils/Responsive'
 
 function Form() {
+   const { pathname } = useLocation()
    const {
       register,
       handleSubmit,
-      formState: { errors },
+      formState: { errors, isValid, isSubmitted, isSubmitSuccessful },
    } = useForm()
-   const onSubmit = (data) => console.log(data)
-   console.log(errors)
 
-   return (
+   const date = new Date()
+   const options = {
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+   }
+
+   const [submitted, setSubmitted] = useState(false)
+   //    const onSubmit = (data) => console.log(data)
+   const onSubmit = (data) => {
+      // code pour envoyer les données vers un serveur ou autre
+      setSubmitted(true)
+      console.log(data)
+   }
+
+   return isSubmitSuccessful ? (
+      <p className="form_succes-message">
+         Commande effectuée !<br />
+         Le {date.toLocaleDateString('fr-FR', options)}
+      </p>
+   ) : (
       <form onSubmit={handleSubmit(onSubmit)} className="form">
          <label htmlFor="nom">Nom</label>
          <input
@@ -81,7 +104,10 @@ function Form() {
             </p>
          )}
          <div className="form_submit">
-            <button type="submit">Commander</button>
+            <button type="submit">
+               <span>Commander</span>
+               <i className="fa-solid fa-check"></i>
+            </button>
          </div>
       </form>
    )

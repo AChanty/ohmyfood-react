@@ -35,7 +35,10 @@ function Restaurant() {
          </Helmet>
          <Location location={location} />
          <BackgroundRestaurant source={background} />
-         <div className="restaurant-page-wrapper">
+         <div
+            className={`restaurant-page-wrapper ${showPopup ? 'blur' : ''}`} // ajoute une classe blur si showPopup est actif
+            onClick={() => setShowPopup(false)} // retire le popup lors du clic en dehors de celui-ci
+         >
             <section className="restaurant-page">
                <div className="restaurant-page__restaurant-name">
                   <h1>{name}</h1>
@@ -49,6 +52,11 @@ function Restaurant() {
                      </div>
 
                      <div>
+                        <img
+                           // src="${process.env.PUBLIC_URL}/public/images/a-la-francaise.jpg"
+                           src={`${process.env.PUBLIC_URL}/images/a-la-francaise.jpg`}
+                           alt=""
+                        />
                         <PlatesList categorie={entrées} />
                      </div>
                   </div>
@@ -77,15 +85,14 @@ function Restaurant() {
                   <Button
                      text={'Commander'}
                      link={pathname}
-                     onClick={() => setShowPopup(false)}
+                     onClick={() => setShowPopup(true)}
                   />
-                  {showPopup ? (
-                     <Popup showPopup={showPopup} setShowPopup={setShowPopup} />
-                  ) : null}
-                  {console.log(showPopup)}
                </div>
             </section>
          </div>
+         {showPopup ? (
+            <Popup showPopup={showPopup} setShowPopup={setShowPopup} />
+         ) : null}
       </div>
    )
 }

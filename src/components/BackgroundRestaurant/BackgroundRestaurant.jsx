@@ -5,7 +5,8 @@ function BackgroundRestaurant({ source }) {
       <div
          className="restaurant__background"
          style={{
-            backgroundImage: `url(${source})`,
+            // backgroundImage: `url(${source})`,
+            backgroundImage: `url(${source}`,
          }}
       ></div>
    )

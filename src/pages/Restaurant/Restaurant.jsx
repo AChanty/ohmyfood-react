@@ -52,11 +52,10 @@ function Restaurant() {
                      </div>
 
                      <div>
-                        <img
-                           // src="${process.env.PUBLIC_URL}/public/images/a-la-francaise.jpg"
+                        {/* <img
                            src={`${process.env.PUBLIC_URL}/images/a-la-francaise.jpg`}
                            alt=""
-                        />
+                        /> */}
                         <PlatesList categorie={entrées} />
                      </div>
                   </div>

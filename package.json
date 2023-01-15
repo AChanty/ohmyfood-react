@@ -1,7 +1,7 @@
 {
    "name": "ohmyfood-react",
    "version": "0.1.0",
-   "homepage": "/ohmyfood-react/#",
+   "homepage": "/ohmyfood-react/",
    "private": true,
    "dependencies": {
       "@testing-library/jest-dom": "^5.16.5",

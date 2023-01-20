@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "http://localhost:5000/static/css/main.0b58f799.css",
-    "main.js": "http://localhost:5000/static/js/main.5e7bd733.js",
+    "main.css": "http://localhost:5000/static/css/main.df1f60e4.css",
+    "main.js": "http://localhost:5000/static/js/main.2da7c2df.js",
     "static/media/ohmyfood@2x.svg": "http://localhost:5000/static/media/ohmyfood@2x.b2b903cdc74de60722a87c015e81a5af.svg",
     "index.html": "http://localhost:5000/index.html",
     "static/media/heart-solid.svg": "http://localhost:5000/static/media/heart-solid.236926d89b6bc9d74a8a.svg",
-    "main.0b58f799.css.map": "http://localhost:5000/static/css/main.0b58f799.css.map",
-    "main.5e7bd733.js.map": "http://localhost:5000/static/js/main.5e7bd733.js.map"
+    "main.df1f60e4.css.map": "http://localhost:5000/static/css/main.df1f60e4.css.map",
+    "main.2da7c2df.js.map": "http://localhost:5000/static/js/main.2da7c2df.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b58f799.css",
-    "static/js/main.5e7bd733.js"
+    "static/css/main.df1f60e4.css",
+    "static/js/main.2da7c2df.js"
   ]
 }

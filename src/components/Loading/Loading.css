@@ -6,7 +6,7 @@
    animation: rotate 1s infinite linear;
    height: 0;
    width: 0;
-   margin: auto;
+   margin: 200px auto;
 }
 
 @keyframes rotate {

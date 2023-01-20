@@ -1,0 +1,246 @@
+[
+   {
+      "id": "la-palette-du-gout-e8418b60",
+      "name": "La palette du goût",
+      "cover": "./images/palette-du-gout.jpg",
+      "background": "https://achanty.github.io/ohmyfood-react/images/palette-du-gout.jpg",
+      "nouveau": true,
+      "location": "Ménilmontant",
+      "menu": {
+         "entrées": [
+            {
+               "plate": "Fricassé d'escargot",
+               "description": "Au piment d'espelette",
+               "price": "25€"
+            },
+            {
+               "plate": "Foie gras de canard mi-cuit",
+               "description": "Et ses copeaux de truffe noire",
+               "price": "35€"
+            },
+            {
+               "plate": "Oeuf au plat",
+               "description": "Assaisonné à la truffe sur lit de caviar",
+               "price": "25€"
+            }
+         ],
+         "plats": [
+            {
+               "plate": "Filet de boeuf aux herbes",
+               "description": "Accompagné de sa ribambelle de légumes",
+               "price": "40€"
+            },
+            {
+               "plate": "Parmentier de queue de boeuf",
+               "description": "À la truffe noire sur sa purée de panais",
+               "price": "35€"
+            },
+            {
+               "plate": "Filet de turbot",
+               "description": "Aux agrumes",
+               "price": "44€"
+            }
+         ],
+         "desserts": [
+            {
+               "plate": "Paris-Brest",
+               "description": "Revisité",
+               "price": "18€"
+            },
+            {
+               "plate": "Macaron au chocolat d'exception",
+               "description": "Et glace à la vanille de Madagascar",
+               "price": "22€"
+            },
+            {
+               "plate": "Mousse au chocolat",
+               "description": "Au piment d'Espelette et à la truffe noire",
+               "price": "23€"
+            }
+         ]
+      }
+   },
+   {
+      "id": "la-note-enchantee-048980d0",
+      "name": "La note enchantée",
+      "cover": "./images/note-enchantée.jpg",
+      "background": "https://achanty.github.io/ohmyfood-react/images/note-enchant%C3%A9e.jpg",
+      "nouveau": true,
+      "location": "Charonne",
+      "menu": {
+         "entrées": [
+            {
+               "plate": "Caviar osciètre",
+               "description": "Sur blini à la farine de blé noir",
+               "price": "35€"
+            },
+            {
+               "plate": "Homard et espuma de potiron",
+               "description": "Mariné aux zestes d'orange",
+               "price": "20€"
+            },
+            {
+               "plate": "Foie gras de canard cuit entier",
+               "description": "Confiture de figue et pain toasté",
+               "price": "35€"
+            }
+         ],
+         "plats": [
+            {
+               "plate": "Noix de coquilles Saint-Jacques",
+               "description": "Sur lit de purée de céleri-rave",
+               "price": "40€"
+            },
+            {
+               "plate": "Langoustine poêlée",
+               "description": "Purée de patate douce",
+               "price": "35€"
+            },
+            {
+               "plate": "Mijoté de queue de boeuf",
+               "description": "Et riz sauvage aux zestes de citron",
+               "price": "44€"
+            }
+         ],
+         "desserts": [
+            {
+               "plate": "Macaron noisette et chocolat",
+               "description": "Glace au caramel brun et sel de Guérande",
+               "price": "18€"
+            },
+            {
+               "plate": "Baba au rhum revisité",
+               "description": "Avec son coulis de citron",
+               "price": "22€"
+            },
+            {
+               "plate": "Tarte au citron meringuée",
+               "description": "Déstructurée",
+               "price": "23€"
+            }
+         ]
+      }
+   },
+   {
+      "id": "a-la-francaise-b748c846",
+      "name": "À la française",
+      "cover": "./images/a-la-francaise.jpg",
+      "nouveau": false,
+      "location": "Cité Rouge",
+      "background": "https://achanty.github.io/ohmyfood-react/images/a-la-francaise.jpg",
+      "menu": {
+         "entrées": [
+            {
+               "plate": "Tartare de poulpe acidulé",
+               "description": "Aux zestes d'orange",
+               "price": "25€"
+            },
+            {
+               "plate": "Velouté de légumes d'antan",
+               "description": "Carotte, panais, topinambour",
+               "price": "35€"
+            },
+            {
+               "plate": "Soupe à l'oignon",
+               "description": "Revisitée",
+               "price": "20€"
+            }
+         ],
+         "plats": [
+            {
+               "plate": "Coquilles Saint-Jacques",
+               "description": "Accompagnées d'une purée de panais",
+               "price": "40€"
+            },
+            {
+               "plate": "Magret de canard",
+               "description": "Et parmentier de pommes de terre",
+               "price": "35€"
+            },
+            {
+               "plate": "Pigeonneau d’Ille-et-Vilaine",
+               "description": "Sur son lit de gnocchis aux légumes",
+               "price": "44€"
+            }
+         ],
+         "desserts": [
+            {
+               "plate": "Pétales de violettes glacés",
+               "description": "Et purée de noisettes",
+               "price": "18€"
+            },
+            {
+               "plate": "Fondant au chocolat",
+               "description": "Revisitée",
+               "price": "22€"
+            },
+            {
+               "plate": "Millefeuille croustillant",
+               "description": "Myrtilles et pâte d’amande",
+               "price": "23€"
+            }
+         ]
+      }
+   },
+   {
+      "id": "le-delice-des-sens-448ef565",
+      "name": "Le délice des sens",
+      "cover": "./images/delice-des-sens.jpg",
+      "background": "https://achanty.github.io/ohmyfood-react/images/delice-des-sens.jpg",
+      "nouveau": false,
+      "location": "Folie-Méricourt",
+      "menu": {
+         "entrées": [
+            {
+               "plate": "Tartare de thon",
+               "description": "Assaisonné au yuzu",
+               "price": "25€"
+            },
+            {
+               "plate": "Bouchée de homard croustillant",
+               "description": "Et sa farandole de petits légumes",
+               "price": "35€"
+            },
+            {
+               "plate": "Velouté de cèpes",
+               "description": "Aux truffes",
+               "price": "20€"
+            }
+         ],
+         "plats": [
+            {
+               "plate": "Poulet rôti aux herbes de Provence",
+               "description": "Et sa crème de truffe",
+               "price": "40€"
+            },
+            {
+               "plate": "Langouste rôtie",
+               "description": "Et ses légumes de saison",
+               "price": "35€"
+            },
+            {
+               "plate": "Côte de boeuf Angus",
+               "description": "Et sa purée de panais",
+               "price": "44€"
+            }
+         ],
+         "desserts": [
+            {
+               "plate": "Farandole de desserts",
+               "description": "Du chef",
+               "price": "18€"
+            },
+            {
+               "plate": "Crème brulée",
+               "description": "Revisités",
+               "price": "22€"
+            },
+            {
+               "plate": "Tiramisu",
+               "description": "À la noisette",
+               "price": "23€"
+            }
+         ]
+      }
+   }
+]

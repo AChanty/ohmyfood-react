@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "http://localhost:5000/static/css/main.b57ac040.css",
-    "main.js": "http://localhost:5000/static/js/main.5e7bd733.js",
-    "static/media/ohmyfood@2x.svg": "http://localhost:5000/static/media/ohmyfood@2x.b2b903cdc74de60722a87c015e81a5af.svg",
-    "index.html": "http://localhost:5000/index.html",
-    "static/media/heart-solid.svg": "http://localhost:5000/static/media/heart-solid.236926d89b6bc9d74a8a.svg",
-    "main.b57ac040.css.map": "http://localhost:5000/static/css/main.b57ac040.css.map",
-    "main.5e7bd733.js.map": "http://localhost:5000/static/js/main.5e7bd733.js.map"
+    "main.css": "/ohmyfood-react/static/css/main.1250ebd7.css",
+    "main.js": "/ohmyfood-react/static/js/main.f9013f0a.js",
+    "static/media/ohmyfood@2x.svg": "/ohmyfood-react/static/media/ohmyfood@2x.b2b903cdc74de60722a87c015e81a5af.svg",
+    "index.html": "/ohmyfood-react/index.html",
+    "static/media/heart-solid.svg": "/ohmyfood-react/static/media/heart-solid.236926d89b6bc9d74a8a.svg",
+    "main.1250ebd7.css.map": "/ohmyfood-react/static/css/main.1250ebd7.css.map",
+    "main.f9013f0a.js.map": "/ohmyfood-react/static/js/main.f9013f0a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b57ac040.css",
-    "static/js/main.5e7bd733.js"
+    "static/css/main.1250ebd7.css",
+    "static/js/main.f9013f0a.js"
   ]
 }

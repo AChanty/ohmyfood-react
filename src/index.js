@@ -18,7 +18,7 @@ import NotFound from './pages/404/404.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
    <React.StrictMode>
-      <BrowserRouter>
+      {/* <BrowserRouter>
          <ScrollToTop />
          <Header />
          <Routes>
@@ -28,9 +28,9 @@ root.render(
             <Route path="/404" element={<NotFound />}></Route>
          </Routes>
          <Footer />
-      </BrowserRouter>
+      </BrowserRouter> */}
 
-      {/* routes gh page
+      {/* routes gh page */}
       <HashRouter>
          <ScrollToTop />
          <Header />
@@ -41,6 +41,6 @@ root.render(
             <Route path="/404" element={<NotFound />}></Route>
          </Routes>
          <Footer />
-      </HashRouter> */}
+      </HashRouter>
    </React.StrictMode>
 )

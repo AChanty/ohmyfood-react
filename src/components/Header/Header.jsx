@@ -1,6 +1,6 @@
 import './Header.css'
 import logo from '../../assets/logos/ohmyfood@2x.svg'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Header() {
    const { pathname } = useLocation()
@@ -11,17 +11,17 @@ function Header() {
          <div className="header__logo-wrapper">
             <div className="header__restaurant-wrapper">
                {isRestaurantPage && ( // affiche la flèche de retour si l'url commence par /restaurant
-                  <NavLink to="/">
+                  <Link to="/">
                      <i className="fa-solid fa-arrow-left" />
-                  </NavLink>
+                  </Link>
                )}
-               <NavLink to="/">
+               <Link to="/">
                   <img
                      className="header__logo"
                      src={logo}
                      alt="ohmyfood logo"
                   />
-               </NavLink>
+               </Link>
             </div>
          </div>
       </header>

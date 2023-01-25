@@ -115,7 +115,8 @@ function Restaurant() {
    const [restaurantData, setRestaurantData] = useState() // statut de la réponse du fetch
    const [notFound, setNotFound] = useState(false)
 
-   const [showPopup, setShowPopup] = useState(true)
+   const [showPopup, setShowPopup] = useState(false)
+   const openForm = () => setShowPopup(true)
 
    const { id } = useParams()
 
@@ -214,7 +215,7 @@ function Restaurant() {
                         <Button
                            text={'Commander'}
                            link={pathname}
-                           onClick={() => setShowPopup(true)}
+                           onClick={openForm}
                         />
                      </div>
                   </section>

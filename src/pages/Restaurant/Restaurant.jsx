@@ -110,6 +110,12 @@ import { Helmet } from 'react-helmet'
 import { useState, useEffect } from 'react'
 import Loading from '../../components/Loading/Loading'
 
+function IsNew({ restaurant }) {
+   if (restaurant.nouveau) {
+      return <span className="restaurant-page_new">Nouveau</span>
+   }
+}
+
 function Restaurant() {
    const [isDataLoading, setDataLoading] = useState(false) // statut de la barre de chargement
    const [restaurantData, setRestaurantData] = useState() // statut de la réponse du fetch
@@ -170,6 +176,7 @@ function Restaurant() {
                   }`} // ajoute une classe blur si showPopup est actif
                   onClick={() => setShowPopup(false)} // retire le popup lors du clic en dehors de celui-ci
                >
+                  <IsNew restaurant={restaurantData} />
                   <section className="restaurant-page">
                      <div className="restaurant-page__restaurant-name">
                         <h1>{name}</h1>

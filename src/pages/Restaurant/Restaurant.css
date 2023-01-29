@@ -139,6 +139,7 @@ th {
    border-radius: 40px 40px 0 0;
    margin-top: -65px;
    padding: 30px 0;
+   position: relative;
 }
 @media screen and (min-width: 1366px) {
    .restaurant-page-wrapper {
@@ -363,6 +364,17 @@ th {
       rgb(82, 30, 144) 0%,
       rgb(131, 0, 95) 100%
    );
+}
+.restaurant-page_new {
+   font-weight: bold;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: inherit;
+   color: #ff79da;
+   padding: 10px 20px;
+   border-radius: 10px;
 }
 .restaurant-page-wrapper .restaurant-page__button-wrapper__button a {
    font-size: 1em;

@@ -14,7 +14,7 @@ function Popup({ showPopup, setShowPopup }) {
       }
    }, [showPopup])
 
-   return showPopup ? (
+   return (
       //   <div className="popup_container fadeIn {`!showPopup ?`}">
       <div className={`popup_container fadeIn ${animating ? 'fadeOut' : ''}`}>
          <div className="popup_content">
@@ -27,7 +27,7 @@ function Popup({ showPopup, setShowPopup }) {
             </span>
          </div>
       </div>
-   ) : null
+   )
 }
 
 export default Popup

@@ -4,7 +4,7 @@ import './styles.css'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import {
-   BrowserRouter,
+   // BrowserRouter,
    Routes,
    Route,
    Navigate,
@@ -14,6 +14,7 @@ import Home from './pages/Home/Home.jsx'
 import Restaurant from './pages/Restaurant/Restaurant.jsx'
 import ScrollToTop from './assets/utils/ScrollToTop'
 import NotFound from './pages/404/404.jsx'
+import Order from './pages/Order/Order'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -39,6 +40,7 @@ root.render(
             <Route index element={<Home />}></Route>
             <Route path="/restaurant/:id" element={<Restaurant />}></Route>
             <Route path="/404" element={<NotFound />}></Route>
+            <Route path="/restaurant/:id/order" element={<Order />}></Route>
          </Routes>
          <Footer />
       </HashRouter>
